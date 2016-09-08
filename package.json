@@ -1,7 +1,7 @@
 {
   "name": "is-negated-glob",
   "description": "Returns an object with a `negated` boolean and the `!` stripped from negation patterns. Also respects extglobs.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/is-negated-glob",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/is-negated-glob",

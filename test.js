@@ -45,12 +45,20 @@ describe('is-negated-glob', function() {
       assert(is('!foo').negated);
     });
 
+    it('should be false when the exclamation is escaped', function() {
+      assert(!is('\\!foo').negated);
+    });
+
     it('should be false when a pattern is not negated', function() {
       assert(!is('foo').negated);
     });
 
     it('should be false when a pattern is an extglob', function() {
       assert(!is('!(foo)').negated);
+    });
+
+    it('should be true when first paren is escaped', function() {
+      assert(is('!\\(foo)').negated);
     });
   });
 
